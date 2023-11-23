@@ -7,7 +7,7 @@ secret_key = "ZMK5HD1f2J3ckoUt"
 cloud_connection = mysql.connector.connect(
     host='bi8jjzjpekfiufabfp4u-mysql.services.clever-cloud.com',
     user='u9vwvlgpxselludx',
-    password='SWbvsgDGx7C2PhEGMOS4',
+    password='sRyTOiyFCIflgwXPdlwQ',
     database='bi8jjzjpekfiufabfp4u'
     )
 
