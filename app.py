@@ -15,7 +15,7 @@ app.config["SECRET_KEY"] = "ZMK5HD1f2J3ckoUt"
 
 app.config['MYSQL_HOST'] = 'bi8jjzjpekfiufabfp4u-mysql.services.clever-cloud.com'
 app.config['MYSQL_USER'] = 'u9vwvlgpxselludx'
-app.config['MYSQL_PASSWORD'] = 'SWbvsgDGx7C2PhEGMOS4'
+app.config['MYSQL_PASSWORD'] = 'sRyTOiyFCIflgwXPdlwQ'
 app.config['MYSQL_DB'] = 'bi8jjzjpekfiufabfp4u'
 app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
 
@@ -101,14 +101,14 @@ def collection(current_dispatch):
         
 
 @app.route('/yolo-output', methods=['POST'])
-@token_required
-def yolo_output(current_dispatch):
+# @token_required
+def yolo_output():
     
     try:
         data = request.get_json()
 
         time = data.get("time")
-        dispatch_no = current_dispatch[2]
+        dispatch_no = 20231030001
         x1 = data.get("x1")
         y1 = data.get("y1")
         x2 = data.get("x2")
