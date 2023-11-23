@@ -163,9 +163,6 @@ def retrieve_collections():
 
         rows = cur.fetchall()
 
-        if len(rows) == 0:
-            return {"message": "No collection data!"}
-
         data = []
 
         for row in rows:
